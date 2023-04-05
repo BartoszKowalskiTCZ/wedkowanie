@@ -1,0 +1,4 @@
+ZAPYTANIE PIERWSZE: SELECT `id`, `nazwa`, `wystepowanie` FROM `ryby` WHERE `styl_zycia` = 1;
+ZAPYTANIE DRUGIE: SELECT `Ryby_id`, `wymiar_ochronny` FROM `okres_ochronny` WHERE `wymiar_ochronny` < 30;
+ZAPYTANIE TRZECIE: SELECT r.nazwa, l.akwen, l.wojewodztwo FROM `ryby` AS `r` JOIN lowisko AS `l` ON r.id = l.Ryby_id WHERE `rodzaj` = 3;
+ZAPYTANIE CZWARTE: UPDATE ryby SET dobowy_limit = 10 WHERE id = 1;
